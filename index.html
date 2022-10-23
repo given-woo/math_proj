@@ -4,24 +4,58 @@
 <head>
     <title>Sine Wave</title>
     <script type="text/javascript" src="./index.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body onload="draw()">
-    <canvas id="canvas" width="500" height="100"></canvas>
-    <h2>Wave 1 Settings</h2>
-    <input type="checkbox" name="show1" id="show1" checked>
-    <label for="show1">show wave 1</label>
-    <input type="text" id="amplitude1" placeholder="amplitude" value="20">
-    <input type="text" id="frequency1" placeholder="frequency" value="3">
-    <input type="text" id="wavelength1" placeholder="wavelength" value="100">
-    <input type="text" id="direction1" placeholder="direction" value="1">
-    <h2>Wave 2 Settings</h2>
-    <input type="checkbox" name="show2" id="show2" checked>
-    <label for="show2">show wave 2</label>
-    <input type="text" id="amplitude2" placeholder="amplitude" value="20">
-    <input type="text" id="frequency2" placeholder="frequency" value="3">
-    <input type="text" id="wavelength2" placeholder="wavelength" value="100">
-    <input type="text" id="direction2" placeholder="direction" value="-1">
+    <div class="wrap">
+        <h1>Wave Calculator</h1>
+        <canvas id="canvas" width="800" height="200"></canvas>
+        <div class="inner">
+            <h2>Wave 1 Settings</h2>
+            <div class="check">
+                <input type="checkbox" name="show1" id="show1" checked>
+                <label for="show1">show wave 1</label>
+            </div>
+            <div class="input">
+                <p>Amplitude</p>
+                <input type="text" id="amplitude1" placeholder="amplitude" value="30">
+            </div>
+            <div class="input">
+                <p>Frequency</p>
+                <input type="text" id="frequency1" placeholder="frequency" value="3">
+            </div>
+            <div class="input">
+                <p>Wavelength</p>
+                <input type="text" id="wavelength1" placeholder="wavelength" value="100">
+            </div>
+            <div class="input">
+                <p>Direction</p>
+                <input type="text" id="direction1" placeholder="direction" value="1">
+            </div>
+            <h2 style="margin-top: 30px">Wave 2 Settings</h2>
+            <div class="check">
+                <input type="checkbox" name="show2" id="show2" checked>
+                <label for="show2">show wave 2</label>
+            </div>
+            <div class="input">
+                <p>Amplitude</p>
+                <input type="text" id="amplitude2" placeholder="amplitude" value="30">
+            </div>
+            <div class="input">
+                <p>Frequency</p>
+                <input type="text" id="frequency2" placeholder="frequency" value="3">
+            </div>
+            <div class="input">
+                <p>Wavelength</p>
+                <input type="text" id="wavelength2" placeholder="wavelength" value="100">
+            </div>
+            <div class="input">
+                <p>Direction</p>
+                <input type="text" id="direction2" placeholder="direction" value="-1">
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

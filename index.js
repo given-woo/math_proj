@@ -15,10 +15,6 @@ function showAxes(ctx) {
     // X-Axis
     ctx.moveTo(xMin, height/2);
     ctx.lineTo(width, height/2);
-
-    // Starting line
-    ctx.moveTo(0, 0);
-    ctx.lineTo(0, height);
     
     ctx.stroke();
 }
@@ -91,7 +87,7 @@ function draw() {
     var canvas=document.getElementById("canvas");
     var context=canvas.getContext("2d");
 
-    context.clearRect(0, 0, 500, 500); //캔버스 비우기
+    context.clearRect(0, 0, canvas.width, canvas.height); //캔버스 비우기
     showAxes(context);
     context.save();
 
